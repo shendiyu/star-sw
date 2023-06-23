@@ -2770,14 +2770,14 @@ void l4Builder::defineHltPlots()
 
 	index++; //27
 	HltPlots[index]->logy = 1;
-	hglobalMult = new TH1I("globalMult", "globalMult", 2000, 0, 2000);
+	hglobalMult = new TH1I("globalMult", "globalMult", 4500, 0, 4500);
 	ph = new PlotHisto();
 	ph->histo = hglobalMult;
 	HltPlots[index]->addHisto(ph);
 
 	index++; //28
 	HltPlots[index]->logy = 1;
-	hprimaryMult = new TH1I("primaryMult", "primaryMult", 500, 0, 500);
+	hprimaryMult = new TH1I("primaryMult", "primaryMult", 1500, 0, 1500);
 	ph = new PlotHisto();
 	ph->histo = hprimaryMult;
 	HltPlots[index]->addHisto(ph);
